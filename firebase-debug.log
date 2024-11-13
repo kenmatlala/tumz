@@ -1,0 +1,78 @@
+[debug] [2024-11-13T18:29:15.365Z] ----------------------------------------------------------------------
+[debug] [2024-11-13T18:29:15.380Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Maseru4\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-11-13T18:29:15.383Z] CLI Version:   13.25.0
+[debug] [2024-11-13T18:29:15.383Z] Platform:      win32
+[debug] [2024-11-13T18:29:15.385Z] Node Version:  v22.11.0
+[debug] [2024-11-13T18:29:15.387Z] Time:          Wed Nov 13 2024 20:29:15 GMT+0200 (South Africa Standard Time)
+[debug] [2024-11-13T18:29:15.388Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-13T18:29:15.746Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-13T18:29:15.748Z] > authorizing via signed-in user (kopanoel@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Maseru4\Desktop\tumelo
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-11-13T18:30:20.041Z] Using project from CLI flag: bagweragroup
+[debug] [2024-11-13T18:30:20.047Z] Checked if tokens are valid: false, expires at: 1731461024321
+[debug] [2024-11-13T18:30:20.048Z] Checked if tokens are valid: false, expires at: 1731461024321
+[debug] [2024-11-13T18:30:20.049Z] > refreshing access token with scopes: []
+[debug] [2024-11-13T18:30:20.060Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-11-13T18:30:20.061Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-11-13T18:30:21.070Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-11-13T18:30:21.070Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-11-13T18:30:21.093Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bagweragroup [none]
+[debug] [2024-11-13T18:30:21.862Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bagweragroup 200
+[debug] [2024-11-13T18:30:21.863Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bagweragroup {"projectId":"bagweragroup","projectNumber":"106101649421","displayName":"BagweraGroup","name":"projects/bagweragroup","resources":{"hostingSite":"bagweragroup"},"state":"ACTIVE","etag":"1_2aca58bd-fac7-48c6-9d9b-fc642ee21be0"}
+[info] i  Using project bagweragroup (BagweraGroup) 
+[info] 
+=== Hosting Setup
+[debug] [2024-11-13T18:30:21.881Z] Checked if tokens are valid: true, expires at: 1731526220071
+[debug] [2024-11-13T18:30:21.881Z] Checked if tokens are valid: true, expires at: 1731526220071
+[debug] [2024-11-13T18:30:21.882Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bagweragroup [none]
+[debug] [2024-11-13T18:30:22.314Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bagweragroup 200
+[debug] [2024-11-13T18:30:22.315Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bagweragroup {"projectId":"bagweragroup","projectNumber":"106101649421","displayName":"BagweraGroup","name":"projects/bagweragroup","resources":{"hostingSite":"bagweragroup"},"state":"ACTIVE","etag":"1_2aca58bd-fac7-48c6-9d9b-fc642ee21be0"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2024-11-13T18:36:17.354Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-11-13T18:36:17.947Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-11-13T18:36:17.948Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"11.0.1","browserURL":"https://www.gstatic.com/firebasejs/11.0.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/11.0.1/firebase.tgz"},"live":{"version":"11.0","browserURL":"https://www.gstatic.com/firebasejs/live/11.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/11.0/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/11.0.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/11.0.1/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/11.0.1/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/11.0.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/11.0.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/11.0.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/11.0.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/11.0.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/11.0.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/11.0.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/11.0.1/firebase-database.js","vertexai":"https://www.gstatic.com/firebasejs/11.0.1/firebase-vertexai.js","data-connect":"https://www.gstatic.com/firebasejs/11.0.1/firebase-data-connect.js","firestore.memory":"https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.memory.js"}}
+[info] +  Wrote (public)/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\Maseru4\Desktop\tumelo is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=960547960&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-11-13T18:36:39.263Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2024-11-13T18:36:39.264Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2024-11-13T18:36:39.758Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2024-11-13T18:36:39.758Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2024-11-13T18:36:39.808Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2024-11-13T18:36:40.306Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2024-11-13T18:36:40.307Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"kenmatlala","id":62238987,"node_id":"MDQ6VXNlcjYyMjM4OTg3","avatar_url":"https://avatars.githubusercontent.com/u/62238987?v=4","gravatar_id":"","url":"https://api.github.com/users/kenmatlala","html_url":"https://github.com/kenmatlala","followers_url":"https://api.github.com/users/kenmatlala/followers","following_url":"https://api.github.com/users/kenmatlala/following{/other_user}","gists_url":"https://api.github.com/users/kenmatlala/gists{/gist_id}","starred_url":"https://api.github.com/users/kenmatlala/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/kenmatlala/subscriptions","organizations_url":"https://api.github.com/users/kenmatlala/orgs","repos_url":"https://api.github.com/users/kenmatlala/repos","events_url":"https://api.github.com/users/kenmatlala/events{/privacy}","received_events_url":"https://api.github.com/users/kenmatlala/received_events","type":"User","user_view_type":"private","site_admin":false,"name":"Kopano El Nkitseng Matlala","company":"share.co","blog":"","location":"south africa","email":null,"hireable":true,"bio":"Problem solver and python developer\r\n","twitter_username":null,"notification_email":null,"public_repos":17,"public_gists":0,"followers":5,"following":11,"created_at":"2020-03-16T09:19:43Z","updated_at":"2024-11-12T20:22:23Z","private_gists":0,"total_private_repos":1,"owned_private_repos":1,"disk_usage":93661,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as kenmatlala 
+[info] 
